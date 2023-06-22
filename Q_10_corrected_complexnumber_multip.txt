@@ -1,0 +1,31 @@
+Q_10_corrected_complexnumber_multiplication
+#include <stdio.h>
+
+struct ComplexNumber {
+    float real;
+    float imaginary;
+};
+
+int main() {
+    struct ComplexNumber num1, num2, result;
+
+    printf("Enter the real part of the first complex number: ");
+    scanf("%f", &num1.real);
+
+    printf("Enter the imaginary part of the first complex number: ");
+    scanf("%f", &num1.imaginary);
+
+    printf("Enter the real part of the second complex number: ");
+    scanf("%f", &num2.real);
+
+    printf("Enter the imaginary part of the second complex number: ");
+    scanf("%f", &num2.imaginary);
+
+    // Perform complex number multiplication
+    result.real = num1.real * num2.real - num1.imaginary * num2.imaginary;
+    result.imaginary = num1.real * num2.imaginary + num1.imaginary * num2.real;
+
+    printf("The result of the multiplication is %.2f + %.2fi\n", result.real, result.imaginary);
+
+    return 0;
+}

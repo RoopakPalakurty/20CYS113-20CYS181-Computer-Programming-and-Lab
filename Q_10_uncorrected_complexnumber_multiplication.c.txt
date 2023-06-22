@@ -1,0 +1,15 @@
+Q_10_uncorrected_complexnumber_multiplication.c
+#include <stdio.h>
+int main(){
+struct complex_number{
+    float a,b;
+    float c;
+}cn;
+printf("enter the 1st complex number");
+scanf ("%f",&cn.a);
+printf("enter the 2nd complex number");
+scanf ("%f",&cn.b);
+cn.c=cn.a*cn.b;
+printf("the value/result of multiplication is %f",cn.c);
+return 0;
+}
